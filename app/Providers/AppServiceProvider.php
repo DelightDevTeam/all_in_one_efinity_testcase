@@ -14,7 +14,9 @@ class AppServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->app->bind(ApiService::class, function ($app) {
-            return new ApiService('http://gsmd.336699bet.com'); // Replace with your API base URL
+            //return new ApiService('http://gsmd.336699bet.com'); // Replace with your API base URL
+            return new ApiService('https://swmd.6633663.com'); // Replace with your API base URL
+
         });
     }
 
